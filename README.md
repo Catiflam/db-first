@@ -6,13 +6,17 @@ Mi raccomando: quello che ci interessa sono: il nome della colonna, il tipo di d
 
 # TABELLA AUTO IN CONCESSIONARIA
 
-| COLONNA    | TIPO        | ATTRIBUTI           |
-| ---------- | ----------- | ------------------- |
-| marca      | varchar(50) | NOT NULL            |
-| modello    | varchar(50) | NOT NULL            |
-| cilindrata | tinyint     | NOT NULL            |
-| carburante | varchar(3)  | NOT NULL            |
-| anno       | tinyint     | UNSIGNED,NULL       |
-| nuovo      | tinyint(1)  | UNSIGNED,DEFAULT(0) |
-| usato      | tinyint     | UNSIGNED,DEFAULT(0) |
-| foto       | varchar     | NULL                |
+| COLONNA         | TIPO        | ATTRIBUTI            |
+| --------------- | ----------- | -------------------- |
+| chassis         | brigint     | PRIMARY KEY!         |
+| brand           | varchar(50) | NOT NULL             |
+| model           | varchar(50) | NOT NULL             |
+| displacement    | smallint    | UNSIGNED, NULL       |
+| fuel            | varchar(25) | NOT NULL             |
+| production year | year        | NOT NULL             |
+| price           | mediumint   | NOT NULL             |
+| number of owner | tinyint     | UNSIGNED, DEFAULT(1) |
+| note            | text        | NULL                 |
+| plate           | char(7)     | NOT NULL             |
+| khilometer      | mediumint   | NOT NULL             |
+| condition       | tinyint     | DEFAULT(1)           |
