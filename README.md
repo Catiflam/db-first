@@ -12,11 +12,11 @@ Mi raccomando: quello che ci interessa sono: il nome della colonna, il tipo di d
 | brand           | varchar(50) | NOT NULL             |
 | model           | varchar(50) | NOT NULL             |
 | displacement    | smallint    | UNSIGNED, NULL       |
-| fuel            | varchar(25) | NOT NULL             |
-| production year | year        | NOT NULL             |
+| fuel            | char(2)     | NOT NULL             |
+| production_year | year        | NOT NULL             |
 | price           | mediumint   | NOT NULL             |
-| number of owner | tinyint     | UNSIGNED, DEFAULT(1) |
+| number_of_owner | tinyint     | UNSIGNED, DEFAULT(1) |
 | note            | text        | NULL                 |
-| plate           | char(7)     | NOT NULL             |
+| plate           | char(7)     | NULL                 |
 | khilometer      | mediumint   | NOT NULL             |
 | condition       | tinyint     | DEFAULT(1)           |
